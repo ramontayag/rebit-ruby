@@ -28,7 +28,7 @@ client = Rebit.new
 
 ### Rates
 
-```
+```ruby
 client.rates
 #=> {"USDPHP" => 45.0325, "USD" => 254.51, ...}
 ```
