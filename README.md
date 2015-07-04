@@ -8,6 +8,14 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'rebit'
+
+# This fork of active resource is needed until
+# https://github.com/rails/activeresource/pull/176 is merged
+# (if it is ever merged)
+gem('activeresource', {
+  github: "ramontayag/activeresource",
+  ref: "36f06133638ebc6e4f11e6517072ee4a84256cd1",
+})
 ```
 
 And then execute:
@@ -31,6 +39,38 @@ client = Rebit.new
 ```ruby
 client.rates
 #=> {"USDPHP" => 45.0325, "USD" => 254.51, ...}
+```
+
+### Vendor
+
+To make any vendor calls, you must set the vendor credentials (typically done in an initializer):
+
+```ruby
+Rebit.vendor_api_key = "MY VENDOR API KEY"
+```
+
+### Vendor Info
+
+```ruby
+vendor = Rebit::Vendor.find("VENDOR API KEY")
+vendor.name #=> "Vendor name"
+```
+
+### Vendor Users
+
+```ruby
+Rebit::VendorUser.all
+#=> User objects
+
+Rebit::VendorUser.find(32)
+#=> User with ID 32.
+
+jake = Rebit::VendorUser.create(
+  first_name: "Jake",
+  last_name: "Chambers",
+  email: "jake@ka.tet",
+)
+jake.first_name #=> "Jake"
 ```
 
 ## Development
