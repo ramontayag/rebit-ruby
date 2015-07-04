@@ -1,10 +1,9 @@
 require "httpi"
 require "json"
+require "active_resource"
+require "active_support"
 require "active_support/core_ext/object/to_query"
 require "active_support/core_ext/module/attribute_accessors"
-require "rebit/version"
-require "rebit/client"
-require "rebit/url"
 
 module Rebit
 
@@ -18,3 +17,9 @@ module Rebit
   end
 
 end
+
+require "rebit/version"
+require "rebit/client"
+require "rebit/url"
+require "rebit/models/resource_base"
+require "rebit/models/vendor"
