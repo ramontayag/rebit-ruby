@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rebit.ph/api/v1/rates
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 04 Jul 2015 08:05:54 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"fd758139b9c65fb887584188443ec3a7"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c4e9eeb1-b3ed-4b72-830d-ec6b6a6c9985
+      X-Runtime:
+      - '0.011280'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"USDCAD":1.2571,"USDJPY":122.875,"USDAUD":1.3303,"USDSGD":1.3457,"USDBTC":0.0039,"USDHKD":7.7529,"USDKRW":1122.145,"USDCNY":6.2066,"USDGBP":0.6422,"USDINR":63.4174,"USDVND":21805.0,"SGD":342.4537,"HKD":1972.958,"KRW":285563.4596,"CNY":1579.4556,"EUR":228.9811,"VND":5548936.4,"SAR":954.5545,"TWD":7860.8872,"QAR":926.2563,"KWD":76.9802,"USDPHP":45.0325,"USDEUR":0.8998,"USDQAR":3.6398,"USDKWD":0.3025,"USDAED":3.6732,"USDSAR":3.751,"USDTWD":30.89,"USDIDR":13368.0,"USDMYR":3.7883,"PHP":11432.0,"USD":254.48,"CAD":319.9068,"JPY":31269.23,"AUD":338.5347,"AED":934.7559,"GBP":163.4271,"MYR":964.0466,"INR":16138.46,"IDR":3401888.64,"PHP-ASK":11515.52}'
+    http_version: 
+  recorded_at: Sat, 04 Jul 2015 08:05:55 GMT
+recorded_with: VCR 2.9.3

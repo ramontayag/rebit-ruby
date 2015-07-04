@@ -20,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+All interaction is done via a client object:
+
+```ruby
+client = Rebit.new
+```
+
+### Rates
+
+```
+client.rates
+#=> {"USDPHP" => 45.0325, "USD" => 254.51, ...}
+```
 
 ## Development
 
