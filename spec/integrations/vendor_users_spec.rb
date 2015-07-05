@@ -2,6 +2,21 @@ require "spec_helper"
 
 describe "Vendor users", vcr: {record: :once} do
 
+  describe "Fetching all users" do
+    it "returns users" do
+      email = "roland+#{Time.now.to_i}@ka.tet"
+      user = Rebit::VendorUser.create({
+        first_name: "Roland",
+        last_name: "Deschain",
+        email: email,
+      })
+      expect(user).to be_persisted
+
+      users = Rebit::VendorUser.all
+      expect(users.map(&:id)).to include user.id
+    end
+  end
+
   describe "Creating users" do
     it "creates a new user" do
       user = Rebit::VendorUser.create({

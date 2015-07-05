@@ -21,6 +21,15 @@ module Rebit
         element_path_without_default_prefix_options(id, prefix_options, query_options)
       end
       alias_method_chain :element_path, :default_prefix_options
+
+      def collection_path_with_default_prefix_options(
+        prefix_options = {},
+        query_options = nil
+      )
+        prefix_options.merge!(self.default_prefix_options)
+        collection_path_without_default_prefix_options(prefix_options, query_options)
+      end
+      alias_method_chain :collection_path, :default_prefix_options
     end
 
   end
