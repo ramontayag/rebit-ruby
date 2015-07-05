@@ -1,6 +1,9 @@
 module Rebit
   class ResourceBase
 
+    include Virtus.model
+    attribute :id, Integer
+
     class_attribute :site
     self.site = HOST
 

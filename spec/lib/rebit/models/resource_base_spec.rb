@@ -3,6 +3,11 @@ require "spec_helper"
 module Rebit
   RSpec.describe ResourceBase do
 
+    describe "attributes" do
+      subject { described_class }
+      it { is_expected.to have_attribute(:id, Integer) }
+    end
+
     describe ".site" do
       it "is set to rebit's site" do
         expect(described_class.site.to_s).to eq "https://rebit.ph"
