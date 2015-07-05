@@ -9,4 +9,11 @@ RSpec.describe Rebit do
     end
   end
 
+  describe ".vendor_api_token / .vendor_api_token=" do
+    it "allows you to read and set the vendor_api_token" do
+      Rebit.vendor_api_token = "123"
+      expect(Rebit.vendor_api_token).to eq "123"
+    end
+  end
+
 end

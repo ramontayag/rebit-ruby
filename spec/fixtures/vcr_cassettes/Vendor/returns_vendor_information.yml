@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 04 Jul 2015 13:08:08 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"84150d6dbda5b690151fe48987b2e3cd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 90085c32-51ec-4180-b762-46191ca94cad
+      X-Runtime:
+      - '0.085582'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"vendor":{"id":43,"name":"Global XT","url":"","logo_url":null,"phone":"+639999935105","email":"ramon.tayag@gmail.com","active":true,"user_ids":[]}}'
+    http_version: 
+  recorded_at: Sat, 04 Jul 2015 13:08:08 GMT
+recorded_with: VCR 2.9.3
