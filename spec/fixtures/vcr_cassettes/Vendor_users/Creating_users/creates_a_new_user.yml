@@ -5,7 +5,7 @@ http_interactions:
     uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users.json
     body:
       encoding: UTF-8
-      string: '{"user":{"first_name":"Roland","last_name":"Deschain","email":"roland+1436060703@ka.tet"}}'
+      string: '{"user":{"first_name":"Roland","last_name":"Deschain","email":"roland+1436065358@ka.tet"}}'
     headers:
       Content-Type:
       - application/json
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sun, 05 Jul 2015 01:45:10 GMT
+      - Sun, 05 Jul 2015 03:02:57 GMT
       Connection:
       - keep-alive
       Strict-Transport-Security:
@@ -37,20 +37,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"0472a6faa9ebb0f6b09cf39d178e7311"'
+      - '"90f0b55e2abbf999e6abb9f520490d16"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9793a47f-3bde-4bd6-83cb-5de04d11c5ec
+      - c8d94570-3b65-45ef-be2f-abd70051153d
       X-Runtime:
-      - '0.611881'
+      - '1.596208'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"user":{"id":1632,"first_name":"Roland","last_name":"Deschain","email":"roland+1436060703@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null},"password":"5S57NAJr","api_token":"ymc3w1By6EER9vxF_R_ssP4x1CfQCind"}'
+      string: '{"user":{"id":1637,"first_name":"Roland","last_name":"Deschain","email":"roland+1436065358@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null},"password":"UVyonusk","api_token":"-E3HZ83wUzFMP7eK1yxqSWD6vnSw9VUq"}'
     http_version: 
-  recorded_at: Sun, 05 Jul 2015 01:45:11 GMT
+  recorded_at: Sun, 05 Jul 2015 03:02:57 GMT
 recorded_with: VCR 2.9.3
