@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1660/recipients
+    body:
+      encoding: UTF-8
+      string: email=jake%2B1436094018%40ka.tet&first_name=Jake&last_name=Chambers
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 11:03:38 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Request-Id:
+      - 404f9999-ad46-480a-8190-3febd8efb80e
+      X-Runtime:
+      - '0.041430'
+      Content-Length:
+      - '48'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"status":"500","error":"Internal Server Error"}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 11:00:19 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users
+    body:
+      encoding: UTF-8
+      string: user%5Bemail%5D=jake%2B1436094239%40ka.tet&user%5Bfirst_name%5D=Jake&user%5Blast_name%5D=Chambers
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 11:07:28 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e94a5b399a48e4047c27becce1982b14"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7b6fe005-38a3-40ec-b8cf-337be4a454c2
+      X-Runtime:
+      - '0.391308'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1662,"first_name":"Jake","last_name":"Chambers","email":"jake+1436094239@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null},"password":"Qbn6o-Uv","api_token":"LAwhdFRxjjcF_J1tsTkXuWf6ZRyHE-zq"}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 11:04:07 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1662/recipients
+    body:
+      encoding: UTF-8
+      string: recipient%5Bemail%5D=jake%2B1436094247%40ka.tet&recipient%5Bfirst_name%5D=Jake&recipient%5Blast_name%5D=Chambers&recipient%5Bmobile%5D=%2B639999999999&recipient%5Bprovince%5D=Metro%20Manila
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 11:07:28 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ef060c419a6020e001b7eb64a24c9407"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9efd9f39-6073-4219-91dc-6e8544dc5f9d
+      X-Runtime:
+      - '0.074464'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7164,"user_id":1662,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1436094247@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-05T19:07:28.539+08:00","updated_at":"2015-07-05T19:07:28.539+08:00","deleted_at":null,"created_via_api":true,"deleted":false,"business_name":null,"business_slug":null,"is_test":false}}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 11:04:08 GMT
+recorded_with: VCR 2.9.3
