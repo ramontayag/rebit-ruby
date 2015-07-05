@@ -8,14 +8,6 @@ Add this line to your application's Gemfile:
 
 ```ruby
 gem 'rebit'
-
-# This fork of active resource is needed until
-# https://github.com/rails/activeresource/pull/176 is merged
-# (if it is ever merged)
-gem('activeresource', {
-  github: "ramontayag/activeresource",
-  ref: "36f06133638ebc6e4f11e6517072ee4a84256cd1",
-})
 ```
 
 And then execute:

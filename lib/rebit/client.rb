@@ -6,5 +6,9 @@ module Rebit
       JSON.parse(response.body)
     end
 
+    def vendors
+      @vendor_collection || VendorCollection.new
+    end
+
   end
 end
