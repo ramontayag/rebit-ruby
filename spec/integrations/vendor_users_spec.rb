@@ -44,4 +44,24 @@ describe "Vendor users", vcr: {record: :once} do
     end
   end
 
+  describe "Deleting a user" do
+    it "deletes a user" do
+      pending
+      user = Rebit::VendorUser.create({
+        first_name: "Susanna",
+        last_name: "Dean",
+        email: "susanna+#{Time.now.to_i}@ka.tet",
+      })
+
+      user_id = user.id
+
+      expect(user).to be_persisted
+
+      user.destroy
+
+      expect { Rebit::VendorUser.find(user_id) }.
+        to raise_error(ActiveResource::ResourceNotFound)
+    end
+  end
+
 end
