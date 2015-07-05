@@ -1,59 +1,6 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users.json
-    body:
-      encoding: UTF-8
-      string: '{"user":{"first_name":"Eddie","last_name":"Dean","email":"eddit+1436060711@ka.tet"}}'
-    headers:
-      Content-Type:
-      - application/json
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Sun, 05 Jul 2015 01:45:12 GMT
-      Connection:
-      - keep-alive
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Content-Type:
-      - application/json; charset=utf-8
-      Etag:
-      - '"502b57b78d10815a264ca8b4beb9206b"'
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8b30d0e4-48bb-46b0-8558-cfe0dbf37f32
-      X-Runtime:
-      - '0.468926'
-      Transfer-Encoding:
-      - chunked
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: '{"user":{"id":1633,"first_name":"Eddie","last_name":"Dean","email":"eddit+1436060711@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null},"password":"qLxHMyvZ","api_token":"ySNopG8gE8AkRzyCEv-hJtsW4fEGoA3-"}'
-    http_version: 
-  recorded_at: Sun, 05 Jul 2015 01:45:13 GMT
-- request:
     method: get
     uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1633.json
     body:
@@ -104,4 +51,202 @@ http_interactions:
       string: '{"user":{"id":1633,"first_name":"Eddie","last_name":"Dean","email":"eddit+1436060711@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null}}'
     http_version: 
   recorded_at: Sun, 05 Jul 2015 01:45:14 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users.json
+    body:
+      encoding: UTF-8
+      string: '{"user":{"first_name":"Eddie","last_name":"Dean","email":"eddit+1436078699@ka.tet"}}'
+    headers:
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 06:45:10 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"fe24d1677413d49fe743118e403ad0ce"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ecae1754-7d0a-45cc-964e-76c34fca21b5
+      X-Runtime:
+      - '0.544253'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1642,"first_name":"Eddie","last_name":"Dean","email":"eddit+1436078699@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null},"password":"MaYJYMxt","api_token":"eAp-orjUS92N4cEfcyg_t-DMbnHsUHqy"}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 06:45:10 GMT
+- request:
+    method: get
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1642.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 06:45:17 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"e12c378b32eff003d434fe810084d53e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3fe31a77-4564-4bec-8d14-39919003de63
+      X-Runtime:
+      - '0.084176'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1642,"first_name":"Eddie","last_name":"Dean","email":"eddit+1436078699@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null}}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 06:45:18 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users
+    body:
+      encoding: UTF-8
+      string: user%5Bemail%5D=eddit%2B1436083648%40ka.tet&user%5Bfirst_name%5D=Eddie&user%5Blast_name%5D=Dean
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 08:07:40 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"8b31de57588a471bcc689fef42f1571d"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1f551e97-a084-4303-8996-235ae9254e61
+      X-Runtime:
+      - '1.247172'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1649,"first_name":"Eddie","last_name":"Dean","email":"eddit+1436083648@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null},"password":"Z8tyztaj","api_token":"vxgs94ax8xhzyFz_aQrbzw3KsnXo7LB3"}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 08:07:37 GMT
+- request:
+    method: get
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1649
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 08:07:40 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"080a20aeb0df59dfcc2e94683b2459e2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 73f73f7e-82cb-4b7e-af6c-b44489c17357
+      X-Runtime:
+      - '0.087808'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1649,"first_name":"Eddie","last_name":"Dean","email":"eddit+1436083648@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null}}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 08:07:37 GMT
 recorded_with: VCR 2.9.3
