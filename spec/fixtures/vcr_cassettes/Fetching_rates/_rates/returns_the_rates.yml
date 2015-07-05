@@ -7,12 +7,8 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
       User-Agent:
-      - Ruby
+      - Typhoeus - https://github.com/typhoeus/typhoeus
   response:
     status:
       code: 200
@@ -21,7 +17,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Sat, 04 Jul 2015 08:05:54 GMT
+      - Sun, 05 Jul 2015 08:13:25 GMT
       Connection:
       - keep-alive
       Strict-Transport-Security:
@@ -35,20 +31,20 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - '"fd758139b9c65fb887584188443ec3a7"'
+      - '"7541db4b0f6ed1d750db745b39358e78"'
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c4e9eeb1-b3ed-4b72-830d-ec6b6a6c9985
+      - 0b33bb17-4e7c-41ca-becb-f0ed417e8112
       X-Runtime:
-      - '0.011280'
+      - '0.011383'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"USDCAD":1.2571,"USDJPY":122.875,"USDAUD":1.3303,"USDSGD":1.3457,"USDBTC":0.0039,"USDHKD":7.7529,"USDKRW":1122.145,"USDCNY":6.2066,"USDGBP":0.6422,"USDINR":63.4174,"USDVND":21805.0,"SGD":342.4537,"HKD":1972.958,"KRW":285563.4596,"CNY":1579.4556,"EUR":228.9811,"VND":5548936.4,"SAR":954.5545,"TWD":7860.8872,"QAR":926.2563,"KWD":76.9802,"USDPHP":45.0325,"USDEUR":0.8998,"USDQAR":3.6398,"USDKWD":0.3025,"USDAED":3.6732,"USDSAR":3.751,"USDTWD":30.89,"USDIDR":13368.0,"USDMYR":3.7883,"PHP":11432.0,"USD":254.48,"CAD":319.9068,"JPY":31269.23,"AUD":338.5347,"AED":934.7559,"GBP":163.4271,"MYR":964.0466,"INR":16138.46,"IDR":3401888.64,"PHP-ASK":11515.52}'
+      string: '{"USDCAD":1.2571,"USDJPY":122.875,"USDAUD":1.3303,"USDSGD":1.3457,"SGD":348.9535,"USDHKD":7.7529,"USDKRW":1122.145,"USDCNY":6.2066,"HKD":2010.4045,"KRW":290983.42,"USDGBP":0.6422,"USDINR":63.4174,"CNY":1609.4334,"EUR":233.3271,"VND":5654254.55,"SAR":972.6718,"TWD":8010.0859,"QAR":943.8365,"KWD":78.4413,"USDVND":21805.0,"USDBTC":0.0038,"USDPHP":45.0325,"USDEUR":0.8998,"USDQAR":3.6398,"USDKWD":0.3025,"USDAED":3.6732,"USDSAR":3.751,"USDTWD":30.89,"USDIDR":13368.0,"USDMYR":3.7883,"PHP":11649.0,"USD":259.31,"CAD":325.9786,"JPY":31862.7163,"AUD":344.9601,"AED":952.4975,"GBP":166.5289,"MYR":982.3441,"INR":16444.766,"IDR":3466456.08,"PHP-ASK":11813.22}'
     http_version: 
-  recorded_at: Sat, 04 Jul 2015 08:05:55 GMT
+  recorded_at: Sun, 05 Jul 2015 08:13:21 GMT
 recorded_with: VCR 2.9.3

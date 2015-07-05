@@ -2,7 +2,7 @@ module Rebit
   class Client
 
     def rates
-      response = HTTPI.get(Url.for(:rates))
+      response = Typhoeus.get(Url.for(:rates))
       JSON.parse(response.body)
     end
 
