@@ -1,8 +1,5 @@
 module Rebit
-  class VendorUserCollection
-
-    include Virtus.model
-    attribute :vendor_api_token, String
+  class VendorUserCollection < VendorResourceCollection
 
     def all
       VendorUser.all(default_prefix_options)
