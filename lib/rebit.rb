@@ -1,6 +1,6 @@
-require "httpi"
 require "json"
 require "virtus"
+require "typhoeus"
 require "active_resource"
 require "active_support"
 require "active_support/core_ext/object/to_query"

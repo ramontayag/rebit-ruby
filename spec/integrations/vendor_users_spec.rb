@@ -34,7 +34,7 @@ describe "Vendor users", vcr: {record: :once} do
   end
 
   describe "Finding a user" do
-    it "returns a user matching the id", vcr: {record: :all} do
+    it "returns a user matching the id" do
       user = vendor_client.users.create({
         first_name: "Eddie",
         last_name: "Dean",
