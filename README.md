@@ -38,26 +38,25 @@ client.rates
 To make any vendor calls, you must set the vendor credentials (typically done in an initializer):
 
 ```ruby
-Rebit.vendor_api_key = "MY VENDOR API KEY"
+# This instantiates a vendor object which you can use later on. Useful if you don't want to make an extra GET request
+vendor = Rebit::Vendor.new(vendor_api_token: "MY_VENDOR_API_KEY")
+
+# This finds a vendor (GET request to the server), which you can use later on
+vendor = client.vendors.find("MY_VENDOR_API_KEY")
 ```
 
-### Vendor Info
-
-```ruby
-vendor = Rebit::Vendor.find("VENDOR API KEY")
-vendor.name #=> "Vendor name"
-```
+Both `vendor` objects behave the same way if you will simply use them for its resources:
 
 ### Vendor Users
 
 ```ruby
-Rebit::VendorUser.all
-#=> User objects
+vendor.users.all
+#=> VendorUser objects
 
-Rebit::VendorUser.find(32)
+vendor.users.find(32)
 #=> User with ID 32.
 
-jake = Rebit::VendorUser.create(
+jake = vendor.users.create(
   first_name: "Jake",
   last_name: "Chambers",
   email: "jake@ka.tet",
