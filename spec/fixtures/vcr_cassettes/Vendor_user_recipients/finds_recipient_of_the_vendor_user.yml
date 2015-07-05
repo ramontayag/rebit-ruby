@@ -1,0 +1,146 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users
+    body:
+      encoding: UTF-8
+      string: user%5Bemail%5D=jake%2B1436103754%40ka.tet&user%5Bfirst_name%5D=Jake&user%5Blast_name%5D=Chambers
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 13:42:42 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"6d0a916dc51d73d72070dd4626e38656"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2b8ee843-7789-41c6-ac73-5621a3f058d7
+      X-Runtime:
+      - '0.405963'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1666,"first_name":"Jake","last_name":"Chambers","email":"jake+1436103754@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null},"password":"yMu9Qs4G","api_token":"QNWB9ezyhmmiTMN8yxvxM8z4hDiQsyBy"}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 13:42:42 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1666/recipients
+    body:
+      encoding: UTF-8
+      string: recipient%5Bemail%5D=jake%2B1436103762%40ka.tet&recipient%5Bfirst_name%5D=Jake&recipient%5Blast_name%5D=Chambers&recipient%5Bmobile%5D=%2B639999999999&recipient%5Bprovince%5D=Metro%20Manila
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 13:42:42 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d09e6b30bbb8210533f89a3cba2d43f6"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 59ad3179-d040-47d6-8446-b82b9e8b8d50
+      X-Runtime:
+      - '0.069701'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7168,"user_id":1666,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1436103762@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-05T21:42:42.489+08:00","updated_at":"2015-07-05T21:42:42.489+08:00","deleted_at":null,"created_via_api":true,"deleted":false,"business_name":null,"business_slug":null,"is_test":false}}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 13:42:42 GMT
+- request:
+    method: get
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1666/recipients/7168
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 05 Jul 2015 13:42:42 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"68c63f62a991539ab59ee5bf46f4741e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 121c2b1e-6b20-44a8-b4cf-6d23e48fba6d
+      X-Runtime:
+      - '0.058656'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7168,"user_id":1666,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1436103762@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-05T21:42:42.489+08:00","updated_at":"2015-07-05T21:42:42.489+08:00","deleted":false,"business_name":null,"business_slug":null,"is_test":false},"remittance_ids":[]}'
+    http_version: 
+  recorded_at: Sun, 05 Jul 2015 13:42:42 GMT
+recorded_with: VCR 2.9.3

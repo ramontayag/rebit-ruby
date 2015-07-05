@@ -25,4 +25,20 @@ RSpec.describe "Vendor user recipients", type: :integration, vcr: {record: :once
     expect(recipient).to be_persisted
   end
 
+  it "finds recipient of the vendor user" do
+    recipient = user.recipients.create(
+      first_name: "Jake",
+      last_name: "Chambers",
+      email: "jake+#{Time.now.to_i}@ka.tet",
+      mobile: "+639999999999",
+      province: "Metro Manila",
+    )
+
+    expect(recipient).to be_persisted
+
+    recipient = user.recipients.find(recipient.id)
+
+    expect(recipient.first_name).to eq "Jake"
+  end
+
 end

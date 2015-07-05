@@ -12,9 +12,13 @@ module Rebit
       initialize_recipient(json[:recipient])
     end
 
-    # def find(id)
-    #   VendorUser.find(id)
-    # end
+    def find(id)
+      url = VendorUserRecipient.collection_url(default_prefix_options)
+      url = "#{url}/#{id}"
+      response = Typhoeus.get(url)
+      json = JSON.parse(response.body).with_indifferent_access
+      initialize_recipient(json[:recipient])
+    end
 
     private
 
