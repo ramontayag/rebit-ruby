@@ -1,9 +1,12 @@
 module Rebit
   class VendorUserRecipientCollection < VendorUserResourceCollection
 
-    # def all
-    #   VendorUserRecipient.all(default_prefix_options)
-    # end
+    def all
+      url = VendorUserRecipient.collection_url(default_prefix_options)
+      response = Typhoeus.get(url)
+      json = JSON.parse(response.body).map(&:with_indifferent_access)
+      json.map { |hash| initialize_recipient(hash) }
+    end
 
     def create(attributes={})
       url = VendorUserRecipient.collection_url(default_prefix_options)

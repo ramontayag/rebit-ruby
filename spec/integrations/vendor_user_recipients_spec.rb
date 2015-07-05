@@ -11,6 +11,20 @@ RSpec.describe "Vendor user recipients", type: :integration, vcr: {record: :once
     })
   end
 
+  it "finds all recipients of a vendor user" do
+    recipient = user.recipients.create(
+      first_name: "Jake",
+      last_name: "Chambers",
+      email: "jake+#{Time.now.to_i}@ka.tet",
+      mobile: "+639999999999",
+      province: "Metro Manila",
+    )
+
+    recipient_id = recipient.id
+
+    expect(user.recipients.all.map(&:id)).to include recipient_id
+  end
+
   it "creates a recipient for the vendor" do
     expect(user).to be_persisted
 
