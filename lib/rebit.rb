@@ -24,6 +24,7 @@ end
 require "rebit/version"
 require "rebit/client"
 require "rebit/url"
+require "rebit/collections/collection"
 require "rebit/collections/vendor_collection"
 require "rebit/collections/vendor_resource_collection"
 require "rebit/collections/vendor_user_collection"
