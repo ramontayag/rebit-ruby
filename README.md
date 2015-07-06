@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ramontayag/rebit-ruby.svg)](https://travis-ci.org/ramontayag/rebit-ruby)
+
 # Rebit
 
 Ruby wrapper for the Rebit.ph API.
