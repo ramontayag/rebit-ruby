@@ -1,13 +1,9 @@
 module Rebit
   class VendorUserCollection < VendorResourceCollection
 
-    def collection_url
-      "#{HOST}/api/#{API_VERSION}/vendors/#{vendor_api_token}/users"
-    end
-
-    def resource_url
-      "#{collection_url}/#{id}"
-    end
+    self.site = HOST
+    self.prefix = "/api/#{API_VERSION}/vendors/:vendor_api_token"
+    self.element_name = "user"
 
     def all
       response = Typhoeus.get(collection_url, body: { user: attributes })

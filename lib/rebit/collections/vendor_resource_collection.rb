@@ -1,7 +1,6 @@
 module Rebit
-  class VendorResourceCollection
+  class VendorResourceCollection < Collection
 
-    include Virtus.model
     attribute :vendor_api_token, String
 
   end
