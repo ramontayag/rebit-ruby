@@ -37,6 +37,44 @@ module Rebit
       {}
     end
 
+    def default_all_params
+      attributes
+    end
+
+    def default_create_params
+      attributes
+    end
+
+    def element_initialization_attributes(attrs={})
+      default_element_attributes.merge(attributes).merge(attrs)
+    end
+
+    def default_element_attributes
+      {}
+    end
+
+    def initialize_element(attrs={})
+      element_class.new(element_initialization_attributes(attrs))
+    end
+
+    def all
+      response = Typhoeus.get(collection_url, body: default_all_params)
+      element_hashes = JSON.parse(response.body).map(&:with_indifferent_access)
+      element_hashes.map { |hash| initialize_element(hash) }
+    end
+
+    def create(attrs={})
+      response = Typhoeus.post(collection_url, body: default_create_params)
+      json = JSON.parse(response.body).with_indifferent_access
+      initialize_element(json[element_name])
+    end
+
+    def find(id)
+      response = Typhoeus.get(element_url(id))
+      json = JSON.parse(response.body).with_indifferent_access
+      initialize_element(json[element_name])
+    end
+
     private
 
     def element_class
