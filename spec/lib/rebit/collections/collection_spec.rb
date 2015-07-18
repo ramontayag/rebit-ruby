@@ -12,6 +12,10 @@ module Rebit
         self.prefix = "/api/:api_version"
       end
 
+      UserPersonCollection = Class.new(Collection) do
+        self.element_name = "person"
+      end
+
       BusDriver = Class.new do
         include Virtus.model
         attribute :name, String
@@ -32,6 +36,12 @@ module Rebit
     describe ".prefix accessor" do
       specify do
         expect(Testing::UserCollection.prefix).to eq "/api/:api_version"
+      end
+    end
+
+    describe ".element_name accessor" do
+      specify do
+        expect(Testing::UserPersonCollection.element_name).to eq "person"
       end
     end
 
@@ -69,8 +79,17 @@ module Rebit
         is_expected.to have_attribute(:element_name, String).
           with_default(:default_element_name)
       end
-      it "is the underscored class name" do
-        expect(subject.new.element_name).to eq "bus_driver"
+
+      context "by default" do
+        it "is the underscored class name" do
+          expect(subject.new.element_name).to eq "bus_driver"
+        end
+      end
+
+      context ".element_name is set" do
+        let(:collection) { Testing::UserPersonCollection.new }
+        subject { collection.element_name }
+        it { is_expected.to eq "person" }
       end
     end
 

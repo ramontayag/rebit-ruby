@@ -3,6 +3,7 @@ module Rebit
 
     class_attribute :site
     class_attribute :prefix
+    class_attribute :element_name, instance_accessor: false
 
     include Virtus.model
     attribute :element_name, String, default: :default_element_name, lazy: true
@@ -46,7 +47,7 @@ module Rebit
     end
 
     def default_element_name
-      element_class_name.underscore
+      self.class.element_name || element_class_name.underscore
     end
 
     def default_collection_name
