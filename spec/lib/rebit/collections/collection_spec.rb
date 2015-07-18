@@ -24,6 +24,10 @@ module Rebit
       BusDriverCollection = Class.new(Collection) do
         self.site = "https://url.com"
         self.prefix = "/api/:api_version"
+
+        def default_prefix_options
+          {api_version: "v20", something: "else"}
+        end
       end
     end
 
@@ -58,10 +62,30 @@ module Rebit
     end
 
     describe "#collection_url" do
-      let(:collection) { Testing::UserCollection.new }
-      let(:url) { collection.collection_url(api_version: "v1") }
-      it "is built from the site and prefix, replacing any prefix tokens" do
-        expect(url).to eq "https://url.com/api/v1/users"
+      context "options are given" do
+        let(:collection) { Testing::UserCollection.new }
+        let(:url) { collection.collection_url(api_version: "v1") }
+        it "is built from the site and prefix, replacing any prefix tokens" do
+          expect(url).to eq "https://url.com/api/v1/users"
+        end
+      end
+
+      context "#default_prefix_options is defined" do
+        let(:collection) { Testing::BusDriverCollection.new }
+        let(:url) { collection.collection_url }
+
+        it "uses the options" do
+          expect(url).to eq "https://url.com/api/v20/bus_drivers"
+        end
+      end
+
+      context "#default_prefix_options is defined" do
+        let(:collection) { Testing::BusDriverCollection.new }
+        let(:url) { collection.collection_url(api_version: "v3") }
+
+        it "prioritizes options passed in over the default options" do
+          expect(url).to eq "https://url.com/api/v3/bus_drivers"
+        end
       end
     end
 

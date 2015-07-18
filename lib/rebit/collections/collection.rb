@@ -14,7 +14,8 @@ module Rebit
 
     def collection_url(params={})
       uri = URI.parse(site)
-      uri.path = "#{PathParser.parse(prefix, params)}/#{collection_name}"
+      prefix_options = default_prefix_options.merge(params)
+      uri.path = "#{PathParser.parse(prefix, prefix_options)}/#{collection_name}"
       uri.to_s
     end
 
@@ -30,6 +31,10 @@ module Rebit
     def element_response_body(id, params={})
       response = Typhoeus.get(element_url(id, params))
       JSON.parse(response.body).with_indifferent_access
+    end
+
+    def default_prefix_options
+      {}
     end
 
     private
