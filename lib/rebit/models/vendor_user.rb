@@ -26,6 +26,13 @@ module Rebit
       )
     end
 
+    def remittances
+      @vendor_user_remittance_collection ||= VendorUserRemittanceCollection.new(
+        vendor_api_token: self.vendor_api_token,
+        user_id: self.id,
+      )
+    end
+
     def persisted?
       id.present?
     end

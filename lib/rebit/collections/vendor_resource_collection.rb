@@ -9,8 +9,8 @@ module Rebit
       {element_name => attributes}
     end
 
-    def default_create_params
-      default_all_params
+    def default_create_params(attrs={})
+      { element_name => attributes.merge(attrs) }
     end
 
   end

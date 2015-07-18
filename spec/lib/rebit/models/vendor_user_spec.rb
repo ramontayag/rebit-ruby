@@ -35,5 +35,16 @@ module Rebit
       end
     end
 
+    describe "#remittances" do
+      let(:collection) { double(VendorUserRemittanceCollection) }
+      it "instantiates a remittances collection with the vendor and user info" do
+        user = described_class.new(vendor_api_token: "token", id: 3)
+        expect(VendorUserRemittanceCollection).to receive(:new).
+          with(vendor_api_token: "token", user_id: 3).
+          and_return(collection)
+        expect(user.remittances).to eq collection
+      end
+    end
+
   end
 end

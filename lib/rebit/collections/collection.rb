@@ -41,8 +41,8 @@ module Rebit
       attributes
     end
 
-    def default_create_params
-      attributes
+    def default_create_params(attrs={})
+      attributes.merge(attrs)
     end
 
     def element_initialization_attributes(attrs={})
@@ -54,23 +54,42 @@ module Rebit
     end
 
     def initialize_element(attrs={})
+      if attrs.nil?
+        raise ArgumentError, "can't pass nil arguments when initializing an element"
+      end
       element_class.new(element_initialization_attributes(attrs))
     end
 
     def all
       response = Typhoeus.get(collection_url, body: default_all_params)
       element_hashes = JSON.parse(response.body).map(&:with_indifferent_access)
+      unless response.success?
+        fail StandardError, json[:errors].join(", ")
+      end
       element_hashes.map { |hash| initialize_element(hash) }
     end
 
     def create(attrs={})
-      response = Typhoeus.post(collection_url, body: default_create_params)
+      response = Typhoeus.post(collection_url, {
+        body: default_create_params(attrs),
+      })
+      unless response.success?
+        binding.pry
+        puts response.body
+        return false
+      end
       json = JSON.parse(response.body).with_indifferent_access
       initialize_element(json[element_name])
     end
 
+    def create!(attrs={})
+      record = self.create(attrs)
+      record ? record : fail("Unable to create #{element_name}")
+    end
+
     def find(id)
       response = Typhoeus.get(element_url(id))
+      return false unless response.success?
       json = JSON.parse(response.body).with_indifferent_access
       initialize_element(json[element_name])
     end

@@ -1,0 +1,556 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1781/recipients
+    body:
+      encoding: UTF-8
+      string: recipient%5Bcollection_name%5D=recipients&recipient%5Belement_name%5D=recipient&recipient%5Bemail%5D=jake%2B1437189314%40ka.tet&recipient%5Bfirst_name%5D=Jake&recipient%5Blast_name%5D=Chambers&recipient%5Bmobile%5D=%2B639999999999&recipient%5Bprovince%5D=Metro%20Manila&recipient%5Buser_id%5D=1781&recipient%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 03:28:44 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"ea16829566c26ced3fe51183b73a5129"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9c6ead2d-0576-4675-94c3-37a07573d346
+      X-Runtime:
+      - '0.172071'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7932,"user_id":1781,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1437189314@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-18T11:28:44.789+08:00","updated_at":"2015-07-18T11:28:44.789+08:00","deleted_at":null,"created_via_api":true,"deleted":false,"business_name":null,"business_slug":null,"is_test":false}}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 03:15:15 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1784/recipients
+    body:
+      encoding: UTF-8
+      string: recipient%5Bcollection_name%5D=recipients&recipient%5Belement_name%5D=recipient&recipient%5Bemail%5D=jake%2B1437195763%40ka.tet&recipient%5Bfirst_name%5D=Jake&recipient%5Blast_name%5D=Chambers&recipient%5Bmobile%5D=%2B639999999999&recipient%5Bprovince%5D=Metro%20Manila&recipient%5Buser_id%5D=1784&recipient%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:02:42 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"a00e20a01c9054884fba70e22cad4588"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2e45f760-60f6-4b13-95e9-711e6debed2c
+      X-Runtime:
+      - '0.039132'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7940,"user_id":1784,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1437195763@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-18T13:02:43.700+08:00","updated_at":"2015-07-18T13:02:43.700+08:00","deleted_at":null,"created_via_api":true,"deleted":false,"business_name":null,"business_slug":null,"is_test":false}}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:02:44 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1784/remittances
+    body:
+      encoding: UTF-8
+      string: remittance%5Bamount%5D=10000.0&remittance%5Bcallback_url%5D=https%3A%2F%2Fcallback.url&remittance%5Bcollection_name%5D=remittances&remittance%5Bcurrency%5D=PHP&remittance%5Belement_name%5D=remittance&remittance%5Brecipient_id%5D=7940&remittance%5Bremittance_details%5D[bank]=ABC&remittance%5Bstrategy%5D=bank&remittance%5Buser_id%5D=1784&remittance%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:02:43 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Request-Id:
+      - 598013c2-bfbd-4a1a-ac10-7027f872f8fe
+      X-Runtime:
+      - '0.025359'
+      Content-Length:
+      - '36'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"status":"404","error":"Not Found"}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:02:44 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1785/recipients
+    body:
+      encoding: UTF-8
+      string: recipient%5Bcollection_name%5D=recipients&recipient%5Belement_name%5D=recipient&recipient%5Bemail%5D=jake%2B1437195819%40ka.tet&recipient%5Bfirst_name%5D=Jake&recipient%5Blast_name%5D=Chambers&recipient%5Bmobile%5D=%2B639999999999&recipient%5Bprovince%5D=Metro%20Manila&recipient%5Buser_id%5D=1785&recipient%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:03:38 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"42c7547d84df97210776610135c8ae45"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0babdcd7-4700-4fd5-a9c3-391f52dc2971
+      X-Runtime:
+      - '0.076960'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7941,"user_id":1785,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1437195819@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-18T13:03:39.141+08:00","updated_at":"2015-07-18T13:03:39.141+08:00","deleted_at":null,"created_via_api":true,"deleted":false,"business_name":null,"business_slug":null,"is_test":false}}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:03:39 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1785/remittances
+    body:
+      encoding: UTF-8
+      string: remittance%5Bamount%5D=10000.0&remittance%5Bcallback_url%5D=https%3A%2F%2Fcallback.url&remittance%5Bcollection_name%5D=remittances&remittance%5Bcurrency%5D=PHP&remittance%5Belement_name%5D=remittance&remittance%5Brecipient_id%5D=7941&remittance%5Bremittance_details%5D[bank]=ABC&remittance%5Bstrategy%5D=bank&remittance%5Buser_id%5D=1785&remittance%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:03:39 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Request-Id:
+      - 878b9cbb-e567-4c31-885e-464b5f7d4b83
+      X-Runtime:
+      - '0.019009'
+      Content-Length:
+      - '36'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"status":"404","error":"Not Found"}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:03:43 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1786/recipients
+    body:
+      encoding: UTF-8
+      string: recipient%5Bcollection_name%5D=recipients&recipient%5Belement_name%5D=recipient&recipient%5Bemail%5D=jake%2B1437196666%40ka.tet&recipient%5Bfirst_name%5D=Jake&recipient%5Blast_name%5D=Chambers&recipient%5Bmobile%5D=%2B639999999999&recipient%5Bprovince%5D=Metro%20Manila&recipient%5Buser_id%5D=1786&recipient%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:17:45 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"45d11835849899f58921585b66ab9dfd"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7abd8b85-2fe7-4075-b5fc-b8efa2a8b9aa
+      X-Runtime:
+      - '0.056239'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7943,"user_id":1786,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1437196666@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-18T13:17:45.947+08:00","updated_at":"2015-07-18T13:17:45.947+08:00","deleted_at":null,"created_via_api":true,"deleted":false,"business_name":null,"business_slug":null,"is_test":false}}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:17:46 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1786/remittances
+    body:
+      encoding: UTF-8
+      string: recipient_id=7943&remittance%5Bamount%5D=10000.0&remittance%5Bcallback_url%5D=https%3A%2F%2Fcallback.url&remittance%5Bcollection_name%5D=remittances&remittance%5Bcurrency%5D=PHP&remittance%5Belement_name%5D=remittance&remittance%5Brecipient_id%5D=7943&remittance%5Bremittance_details%5D[bank]=ABC&remittance%5Bstrategy%5D=bank&remittance%5Buser_id%5D=1786&remittance%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:17:45 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"4eeed1c9488a82a50b07f1492e9bdca2"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a9351ec1-6c83-43b8-b844-2e64e3ad91f1
+      X-Runtime:
+      - '0.087467'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"errors":"There was a problem processing your remittance. Please provide
+        the bank name, account name, account type, and account number"}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:17:47 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1787/recipients
+    body:
+      encoding: UTF-8
+      string: recipient%5Bcollection_name%5D=recipients&recipient%5Belement_name%5D=recipient&recipient%5Bemail%5D=jake%2B1437196770%40ka.tet&recipient%5Bfirst_name%5D=Jake&recipient%5Blast_name%5D=Chambers&recipient%5Bmobile%5D=%2B639999999999&recipient%5Bprovince%5D=Metro%20Manila&recipient%5Buser_id%5D=1787&recipient%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:19:30 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"642d0ddc4843dbffa5927de71278e6c8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 44499437-ed82-4340-8dbf-c2082cf973a8
+      X-Runtime:
+      - '0.094103'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7944,"user_id":1787,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1437196770@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-18T13:19:30.783+08:00","updated_at":"2015-07-18T13:19:30.783+08:00","deleted_at":null,"created_via_api":true,"deleted":false,"business_name":null,"business_slug":null,"is_test":false}}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:19:31 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1787/remittances
+    body:
+      encoding: UTF-8
+      string: recipient_id=7944&remittance%5Bamount%5D=10000.0&remittance%5Bcallback_url%5D=https%3A%2F%2Fcallback.url&remittance%5Bcollection_name%5D=remittances&remittance%5Bcurrency%5D=PHP&remittance%5Belement_name%5D=remittance&remittance%5Brecipient_id%5D=7944&remittance%5Bremittance_details%5D[bank]=ABC&remittance%5Bremittance_details%5D[bank_account_name]=Jose%20Aliali&remittance%5Bremittance_details%5D[bank_account_number]=123ABC123&remittance%5Bremittance_details%5D[bank_account_type]=Peso%20Savings&remittance%5Bstrategy%5D=bank&remittance%5Buser_id%5D=1787&remittance%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:19:31 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"118cc5076523c690523007b6302fc0b9"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3393e025-249d-44b5-821d-48fe0c044b80
+      X-Runtime:
+      - '0.670806'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"remittance":{"id":8727,"user_id":1787,"recipient_id":7944,"transaction_id":"20150718131931-jake+1437196770","remittance_details":{"bank":"ABC","bank_account_type":"Peso
+        Savings","bank_account_name":"Jose Aliali","bank_account_number":"123ABC123"},"destination_currency":"PHP","recipient_password":"guomrsej","amount":10000.0,"service_fee":0.0,"amount_in_btc":0.795102,"total":10000.0,"total_in_btc":0.795102,"status":0,"created_at":"2015-07-18T13:19:31.216+08:00","updated_at":"2015-07-18T13:19:31.216+08:00","invoice_address":"3Q5Q5DdZM1W94QL8ZyS3SmUyvhQtwVk8MP","payment_details":[],"processing_fee_in_btc":0.0,"processing_fee_in_php":0.0,"service_fee_in_btc":0.0,"last_refreshed_at":"2015-07-18T13:49:31.216+08:00","tracking_number":null,"rejection_message":null,"completed_at":null,"tracking_sender":null,"bank_account_name":null,"succeeded_at":null,"callback_url":"https://callback.url","notes":null,"instant_remit_token":null,"batch_remittance_id":null,"bill_number":null,"bill_due_date":null,"reported_at":null,"paid_with_credit":false,"vendor_profit_margin":0.0,"vendor_profit_in_php":0.0,"vendor_profit_in_btc":0.0,"vendor_id":43,"vendor_fee_in_php":0.0,"vendor_fee_in_btc":0.0,"is_test":false,"proof_of_deposit":{"url":null,"thumb":{"url":null}},"eload_paid_out_at":null,"delayed":false,"reason_for_delay":null,"callback_responses":[],"strategy":"bank","sub_strategy":"ABC","status_in_words":"pending","invoice_address_with_amount":"bitcoin:3Q5Q5DdZM1W94QL8ZyS3SmUyvhQtwVk8MP?amount=0.795102","cancelled":false,"total_payments":0},"manual_transaction":false}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:19:32 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users
+    body:
+      encoding: UTF-8
+      string: user%5Bcollection_name%5D=users&user%5Belement_name%5D=user&user%5Bemail%5D=roland%2B1437196847%40ka.tet&user%5Bfirst_name%5D=Roland&user%5Blast_name%5D=Deschain&user%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:20:53 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"d41ca5450ffff90bf9674150f3b7f95e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f2b5eec3-ba59-4631-bea1-b725ea2c7f8e
+      X-Runtime:
+      - '0.405364'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"user":{"id":1788,"first_name":"Roland","last_name":"Deschain","email":"roland+1437196847@ka.tet","birthday":null,"mobile":null,"wallet_address":null,"institutional":false,"address":null,"city":null,"country":null,"postal_code":null,"maximum_sends_per_day":10,"mobile_confirmed":true,"kyc_level":0,"identification":{"url":null,"thumb":{"url":null}},"identification_confirmed":false,"proof_of_address":{"url":null,"thumb":{"url":null}},"proof_of_address_confirmed":false,"recipient_ids":[],"remittance_ids":[],"total_remittances_today":0,"vendor_uploaded_identification":null,"vendor_uploaded_proof_of_address":null},"password":"KqViov52","api_token":"eTP9B8etByV7aJXcrb95bvgcjy3wKRSy"}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:20:55 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1788/recipients
+    body:
+      encoding: UTF-8
+      string: recipient%5Bcollection_name%5D=recipients&recipient%5Belement_name%5D=recipient&recipient%5Bemail%5D=jake%2B1437196855%40ka.tet&recipient%5Bfirst_name%5D=Jake&recipient%5Blast_name%5D=Chambers&recipient%5Bmobile%5D=%2B639999999999&recipient%5Bprovince%5D=Metro%20Manila&recipient%5Buser_id%5D=1788&recipient%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:20:55 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"89ed32ef77e4d6f80a01d5943460189e"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b11b2eee-940e-48b0-9848-47dc2b3a7533
+      X-Runtime:
+      - '0.085214'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"recipient":{"id":7945,"user_id":1788,"first_name":"Jake","middle_name":null,"last_name":"Chambers","email":"jake+1437196855@ka.tet","mobile":"+639999999999","address":null,"city":null,"province":"Metro
+        Manila","postal_code":null,"created_at":"2015-07-18T13:20:55.271+08:00","updated_at":"2015-07-18T13:20:55.271+08:00","deleted_at":null,"created_via_api":true,"deleted":false,"business_name":null,"business_slug":null,"is_test":false}}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:20:55 GMT
+- request:
+    method: post
+    uri: https://rebit.ph/api/v1/vendors/<VENDOR_API_TOKEN>/users/1788/remittances
+    body:
+      encoding: UTF-8
+      string: recipient_id=7945&remittance%5Bamount%5D=10000.0&remittance%5Bcallback_url%5D=https%3A%2F%2Fcallback.url&remittance%5Bcollection_name%5D=remittances&remittance%5Bcurrency%5D=PHP&remittance%5Belement_name%5D=remittance&remittance%5Brecipient_id%5D=7945&remittance%5Bremittance_details%5D[bank]=ABC&remittance%5Bremittance_details%5D[bank_account_name]=Jose%20Aliali&remittance%5Bremittance_details%5D[bank_account_number]=123ABC123&remittance%5Bremittance_details%5D[bank_account_type]=Peso%20Savings&remittance%5Bstrategy%5D=bank&remittance%5Buser_id%5D=1788&remittance%5Bvendor_api_token%5D=<VENDOR_API_TOKEN>
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sat, 18 Jul 2015 05:20:56 GMT
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - '"2df4ffcce7288e6b577bc475c89acc2b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5c7419f2-3579-4a95-8dad-6c69b8a59fb6
+      X-Runtime:
+      - '0.702978'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"remittance":{"id":8728,"user_id":1788,"recipient_id":7945,"transaction_id":"20150718132055-jake+1437196855","remittance_details":{"bank":"ABC","bank_account_type":"Peso
+        Savings","bank_account_name":"Jose Aliali","bank_account_number":"123ABC123"},"destination_currency":"PHP","recipient_password":"oaupxwsn","amount":10000.0,"service_fee":0.0,"amount_in_btc":0.796115,"total":10000.0,"total_in_btc":0.796115,"status":0,"created_at":"2015-07-18T13:20:55.708+08:00","updated_at":"2015-07-18T13:20:55.708+08:00","invoice_address":"3DGDCb5bC9oBJZvhuiyzq49yvoruuDY5JW","payment_details":[],"processing_fee_in_btc":0.0,"processing_fee_in_php":0.0,"service_fee_in_btc":0.0,"last_refreshed_at":"2015-07-18T13:50:55.708+08:00","tracking_number":null,"rejection_message":null,"completed_at":null,"tracking_sender":null,"bank_account_name":null,"succeeded_at":null,"callback_url":"https://callback.url","notes":null,"instant_remit_token":null,"batch_remittance_id":null,"bill_number":null,"bill_due_date":null,"reported_at":null,"paid_with_credit":false,"vendor_profit_margin":0.0,"vendor_profit_in_php":0.0,"vendor_profit_in_btc":0.0,"vendor_id":43,"vendor_fee_in_php":0.0,"vendor_fee_in_btc":0.0,"is_test":false,"proof_of_deposit":{"url":null,"thumb":{"url":null}},"eload_paid_out_at":null,"delayed":false,"reason_for_delay":null,"callback_responses":[],"strategy":"bank","sub_strategy":"ABC","status_in_words":"pending","invoice_address_with_amount":"bitcoin:3DGDCb5bC9oBJZvhuiyzq49yvoruuDY5JW?amount=0.796115","cancelled":false,"total_payments":0},"manual_transaction":false}'
+    http_version: 
+  recorded_at: Sat, 18 Jul 2015 05:20:56 GMT
+recorded_with: VCR 2.9.3
